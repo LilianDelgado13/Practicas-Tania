@@ -1,3 +1,33 @@
-*{
+/* Este es un comentario en CSS */
+*{ /* Selector universal */
     background-color: cornflowerblue;
 }
+h1{ /* Selector de tipo o de elemento*/
+    font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;
+}
+.terminos-a-definir{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    background-color: burlywood;
+}
+
+
+
+
+
+
+
+
+
+
+/* Selescores de ID: Seleccionan un elemento especifico y no se comparte con otros elementos */
+#parrafo-inicial{
+
+}
+
+#gato-Tay{
+    width: 300px;
+    height: 300px;
+    border-radius: 25%;
+}
+
