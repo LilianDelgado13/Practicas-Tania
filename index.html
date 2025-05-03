@@ -4,15 +4,25 @@
     <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres del documento-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Se utiliza para el responsive pero no quiere decir que al colocarla todo sea responsive -->
     <title> Mi página web </title> <!-- Titulo del sitio-->
-    <link rel="stylesheet" href="./estilos/styles.css">
+    <!--link rel="stylesheet" href="./estilos/styles.css"> CSS externo-->
+    <style> <!--CSS interno-->
+        *{background-color: rgb(46, 211, 227);
+
+        }
+    h1{ /* Selector de tipo o de elemento*/
+        font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;
+    }
+
+    </style> 
+
 </head> 
 <body> 
     <h1> Mis comidas favoritas  </h1>
     <h2> Chile en nogada capeados </h2>
     <h2> Tinga de pollo </h2>
     
-       <p> 
-           Mi favorita es la tinga dulce
+       <p style="color: red;" </p>id="parrafo-inicial"> <!-- CSS en línea--> 
+           Mi favorita es la tinga dulce con piloncillo y con chipotle, me gusta la mezcla de dulce con picoso, le pongo crema y en lugar de tostadas me hago taquitos con tortilla de maíz. 
 
        </p>
     <h3> Crepas de nutella y philadelphia </h3>
@@ -20,7 +30,7 @@
     <h5> Pastel de tres leches </h5>
     <h6> Pan rol de canela </h6>
 
-    <img src="https://static.wikia.nocookie.net/taylorswift/images/e/e9/Benjamin_Button_-_Taylor_Swift_via_Instagram_-_13-07-2019.jpg/revision/latest/scale-to-width-down/1000?cb=20190729130446&path-prefix=es" alt=" Es gatito de Taylor ">
+    <img id="#gato-Tay" src="https://static.wikia.nocookie.net/taylorswift/images/e/e9/Benjamin_Button_-_Taylor_Swift_via_Instagram_-_13-07-2019.jpg/revision/latest/scale-to-width-down/1000?cb=20190729130446&path-prefix=es" alt=" Es gatito de Taylor ">
 
     <span> Este es un contenedor genérico en línea <strong>en línea</strong></span>
     <span> Hola, soy otro contenedor genérico en línea </span> <div>  Holi </div>
