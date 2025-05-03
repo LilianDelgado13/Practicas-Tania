@@ -1,91 +1,105 @@
 <!DOCTYPE html> <!-- Tipo de documento -->
-<html lang="en"> <!-- Atributo language-idioma esta en es-english -->
+<html lang="es"> <!-- Atributo language-idioma esta en es-english -->
 <head> <!-- head contiene metadatos que no son visibles en el sitio, no son visibles pero son impo-->
     <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres del documento-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Se utiliza para el responsive pero no quiere decir que al colocarla todo sea responsive -->
     <title> Mi página web </title> <!-- Titulo del sitio-->
     <!--link rel="stylesheet" href="./estilos/styles.css"> CSS externo-->
-    <style> <!--CSS interno-->
-        *{background-color: rgb(46, 211, 227);
+    <!--<style> CSS interno
+        *{
+             background-color: rgb(46, 211, 227);
+     }
 
-        }
-    h1{ /* Selector de tipo o de elemento*/
-        font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;
-    }
+     h1{ 
+        font-family: Georgia, 'Times New Roman', Times, serif; 
+        text-align: center;
+     }
 
-    </style> 
+     p{
+         color:darkgreen;
+     }
+    </style> -->
 
 </head> 
 <body> 
-    <h1> Mis comidas favoritas  </h1>
-    <h2> Chile en nogada capeados </h2>
-    <h2> Tinga de pollo </h2>
-    
-       <p style="color: red;" </p>id="parrafo-inicial"> <!-- CSS en línea--> 
+    <h1> Mis comidas favoritas  </h1> <!--Solo debe haber un h1 por documento-->
+    <h2> Tinga de pollo - Especialidad de mi tía </h2>
+       <p style="color: red;" id="parrafo-inicial"> <!-- CSS en línea--> 
            Mi favorita es la tinga dulce con piloncillo y con chipotle, me gusta la mezcla de dulce con picoso, le pongo crema y en lugar de tostadas me hago taquitos con tortilla de maíz. 
-
        </p>
-    <h3> Crepas de nutella y philadelphia </h3>
-    <h4> Enchiladas suizas </h4>
-    <h5> Pastel de tres leches </h5>
-    <h6> Pan rol de canela </h6>
+    <h2> Crepas de nutella y philadelphia - CDMX</h2>
+    <h3> Enchiladas suizas </h3>
+    <h4> Pastel de tres leches - CDMX </h4>
+    <h5> Chiles en nogada capeados - Puebla</h5>
+    <h6> Tacos dorados de pollo bañados de salsa verde </h6>
 
-    <img id="#gato-Tay" src="https://static.wikia.nocookie.net/taylorswift/images/e/e9/Benjamin_Button_-_Taylor_Swift_via_Instagram_-_13-07-2019.jpg/revision/latest/scale-to-width-down/1000?cb=20190729130446&path-prefix=es" alt=" Es gatito de Taylor ">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2H9wUhg_PDPY2aZ69NOJIVZuGMSoV8dfJ6w&s" alt="Es la gatita de Taylor y se llama Olivia y tiene la patita alzada, es una gata de raza Scottish Fold">
 
     <span> Este es un contenedor genérico en línea <strong>en línea</strong></span>
-    <span> Hola, soy otro contenedor genérico en línea </span> <div>  Holi </div>
-    <div> Este es un generico <strong><em>en bloque</em> </strong> </div>
+    <span> Hola, soy otro contenedor genérico en línea </span> <div>Holi</div>
+    <div> Este es un genérico <strong><em>en bloque</em></strong></div>
     <!--Esta sería una forma incorrecta de anidación-->
-    <p> Mi gato es <strong> muy gruñon </strong> </p> 
-    <p> 
-        Lorem no me salió porque tengo mac 
-    
+    <p> Mi gato es <strong> muy gruñón </p></strong>
+    <hr>
 
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi voluptas, a fugiat cupiditate consequuntur numquam nam dolor deleniti ipsa libero quidem aliquid eius quisquam veniam suscipit et molestiae, corrupti omnis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio placeat sed architecto, nisi fugiat quas est dolores distinctio libero deserunt. Modi cum vitae pariatur numquam maxime harum sequi inventore voluptatibus.
+        Et natus est ex ullam saepe odio distinctio! Maiores corrupti ab veniam libero explicabo obcaecati sint cupiditate fuga, mollitia ullam vitae odit quod possimus beatae quas, id aspernatur nesciunt aliquid!
+        Fuga repellendus quod minima illum accusamus exercitationem, ullam cupiditate quae laborum reprehenderit nam ea, quam similique at. Modi illo consectetur dolore inventore tenetur mollitia laborum minima maiores nesciunt, impedit deserunt!
+    </p>
 
+    <!--Tipos de listas-->
+    <!--Lista ordenada-->
+    <h3> Top 5 de ingredientes favs en comidas </h3>
+    <ol>
+        <li> Picante </li>
+        <li> Dulce </li>
+        <li> Limón </li>
+        <li> Aguacate </li>
+        <li> Crema 
+            <ul>
+                <li> Empanizado </li>
+                <li> Capeado </li>
+                <li> Dorado 
+                    <ol>
+                        <li> Frito </li>
+                        <li> Ahumado </li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+        
 
+    <img src="./imagenes/pngtree-chef-cat-cooking-in-kitchen-cartoon-friend-cats-restaurant-photo-image_49262358.jpg" alt="Imagen de gatito animado orgulloso con su cucharon, vestido de chef elegante y con su olla de caldo en llamas.">
 
+    <h3> Top 5 de ingredientes non gratos en mis comidas </h3>
+    <ul>
+        <li class="terminos-a-definir"> Queso azul </li>
+        <li> Cebolla blanca cruda </li>
+        <li> Aderezo ranch </li>
+        <li> Vinagre </li>
+        <li> Anís </li>
+    </ul>
 
+    <span> Comida de películas: Harry Potter </span>
+    <dl>
+        <dt class="terminos-a-definir">Cerveza de mantequilla</dt><!-- Asignamos una clase que se comparte con otros elementos. -->
+        <dd>La cerveza de mantequilla o cerveza de manteca es una bebida muy popular del mundo mágico descrita con un sabor un poco menos empalagoso que el de una butterscotch.</dd>
+        <br> <!-- Break, da un salto de línea, espaciado-->
+        <dt class="terminos-a-definir">Rana de chocolate</dt>
+        <dd>Las Ranas de Chocolate son un dulce muy común en el mundo mágico. Estas golosinas se pueden comprar en el carrito de los dulces del Expreso de Hogwarts y en Honeydukes. Los empaques son de color azul y dorado y tienen escritas las palabras "Rana de chocolate" en letras doradas además poseen una forma pentagonal. Cada uno de éstos contiene una rana de chocolate, que tratará de escaparse, y un cromo, con la imagen de alguna bruja o algún mago famoso, que se pueden coleccionar e intercambiar.</dd>
+        <dt class="terminos-a-definir">Cerveza de mantequilla</dt>
+        <dd>La cerveza de mantequilla o cerveza de manteca es una bebida muy popular del mundo mágico descrita con un sabor un poco menos empalagoso que el de una butterscotch.</dd>
+        <br> <!-- Break, da un salto de línea, espaciado-->
+        <dt>Rana de chocolate</dt>
+        <dd>Las Ranas de Chocolate son un dulce muy común en el mundo mágico. Estas golosinas se pueden comprar en el carrito de los dulces del Expreso de Hogwarts y en Honeydukes. Los empaques son de color azul y dorado y tienen escritas las palabras "Rana de chocolate" en letras doradas además poseen una forma pentagonal. Cada uno de éstos contiene una rana de chocolate, que tratará de escaparse, y un cromo, con la imagen de alguna bruja o algún mago famoso, que se pueden coleccionar e intercambiar.</dd>
+    </dl>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <img src="./imagenes/23032bbd9e2e-taylor-swift.png-2.avif.jpg" alt=" Es la gatita de Taylor, se llama Olivia y tiene la patita alzada, es una gata de raza Scottish Fold.">
-
+    <p>
+        Este es un ejemplo adicional de párrafo.
+        Este es un ejemplo adicional de párrafo.
+        Este es un ejemplo adicional de párrafo.
+    </p>
 </body>
 </html>
